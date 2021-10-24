@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="612.0" prefWidth="416.0" style="-fx-background-color: #89cff0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.LoggedAndRegisteredScene">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="146.0" prefHeight="57.0" prefWidth="154.0" text="Your Profile">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userImg" fitHeight="110.0" fitWidth="114.0" layoutX="153.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/register.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="138.0" layoutY="499.0" mnemonicParsing="false" onAction="#firstScene" prefHeight="57.0" prefWidth="135.0" style="-fx-background-color: #e3f4fc;" text="Log Out">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="203.0" prefHeight="57.0" prefWidth="256.0" text="Connect to your socials:">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="fb" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="298.0" onAction="#facebook" prefHeight="35.0" prefWidth="190.0" text="Facebook">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lkd" alignment="CENTER" contentDisplay="CENTER" layoutX="113.0" layoutY="336.0" onAction="#linkedin" prefHeight="35.0" prefWidth="190.0" text="LinkedIn">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="insta" alignment="CENTER" contentDisplay="CENTER" layoutX="113.0" layoutY="260.0" onAction="#instagram" prefHeight="35.0" prefWidth="190.0" text="Instagram">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

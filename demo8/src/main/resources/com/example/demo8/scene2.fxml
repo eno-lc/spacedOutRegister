@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="535.0" prefWidth="370.0" style="-fx-background-color: #89cff0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.Scene2">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="529.0" prefWidth="364.0" style="-fx-background-color: #e3f4fc;">
+         <children>
+            <TextField fx:id="email" layoutX="120.0" layoutY="335.0" prefHeight="25.0" prefWidth="187.0" promptText="Type your e-mail" />
+            <ImageView fitHeight="119.0" fitWidth="116.0" layoutX="124.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/userLog.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="name" layoutX="120.0" layoutY="168.0" prefHeight="25.0" prefWidth="187.0" promptText="Type your name" />
+            <Label layoutX="35.0" layoutY="166.0" prefHeight="30.0" prefWidth="85.0" text="First Name">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="204.0" prefHeight="30.0" prefWidth="85.0" text="Last Name">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastname" layoutX="120.0" layoutY="207.0" prefHeight="25.0" prefWidth="187.0" promptText="Type your lastname" />
+            <PasswordField fx:id="password2" layoutX="120.0" layoutY="293.0" prefHeight="25.0" prefWidth="187.0" promptText="Re-type your password" />
+            <PasswordField fx:id="password1" layoutX="120.0" layoutY="249.0" prefHeight="25.0" prefWidth="187.0" promptText="Type your password" />
+            <Label layoutX="35.0" layoutY="246.0" prefHeight="30.0" prefWidth="85.0" text="Password">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="290.0" prefHeight="30.0" prefWidth="85.0" text="Re-type">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="333.0" prefHeight="30.0" prefWidth="85.0" text="E-Mail">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="check2" layoutX="35.0" layoutY="379.0" mnemonicParsing="false" text="Accept our Terms and Agreements.">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER" layoutX="107.0" layoutY="127.0" prefHeight="39.0" prefWidth="151.0" text="Registration">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerBtn" layoutX="214.0" layoutY="453.0" mnemonicParsing="false" onAction="#infoChecker" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #89cff0;" text="Register">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="423.0" prefHeight="17.0" prefWidth="306.0" textFill="RED" />
+            <Label fx:id="labelInfo1" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="423.0" prefHeight="17.0" prefWidth="306.0" textFill="#31b52a" />
+            <Button fx:id="registerBtn1" layoutX="35.0" layoutY="453.0" mnemonicParsing="false" onAction="#firstScene" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #89cff0;" text="Back">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
